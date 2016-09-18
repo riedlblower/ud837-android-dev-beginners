@@ -11,13 +11,6 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Team A"
-            android:textSize="24sp" />
-
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -53,17 +46,52 @@
                     android:textColor="#000000"
                     android:textSize="56sp" />
 
+                    <TextView
+                        android:id="@+id/team_a_point_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="sans-serif-light"
+                        android:padding="4dp"
+                        android:text="0"
+                        android:textColor="#000000"
+                        android:textSize="56sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical"
+                android:paddingLeft="32dp">
+
                 <TextView
-                    android:id="@+id/team_a_point_score"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="4dp"
-                    android:layout_marginTop="4dp"
                     android:fontFamily="sans-serif-light"
-                    android:padding="4dp"
+                    android:text="Team A"
+                    android:textColor="#000000"
+                    android:textSize="36sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Total Score"
+                    android:textColor="#000000"
+                    android:textSize="26sp" />
+
+                <TextView
+                    android:id="@+id/team_a_total_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
                     android:text="0"
                     android:textColor="#000000"
-                    android:textSize="56sp" />
+                    android:textSize="26sp" />
 
             </LinearLayout>
 
@@ -77,8 +105,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
                     android:onClick="addGoalForTeamA"
                     android:text="Goal" />
 
@@ -86,8 +112,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
                     android:onClick="addPointForTeamA"
                     android:text="Point" />
 
@@ -104,13 +128,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/teamA"
         android:orientation="vertical">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Team B"
-            android:textSize="24sp" />
 
         <RelativeLayout
             android:layout_width="wrap_content"
@@ -164,6 +181,41 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical"
+                android:paddingLeft="32dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Team B"
+                    android:textColor="#000000"
+                    android:textSize="36sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Total Score"
+                    android:textColor="#000000"
+                    android:textSize="26sp" />
+
+                <TextView
+                    android:id="@+id/team_b_total_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="0"
+                    android:textColor="#000000"
+                    android:textSize="26sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:orientation="vertical">
 
@@ -171,8 +223,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
                     android:onClick="addGoalForTeamB"
                     android:text="Goal" />
 
@@ -180,8 +230,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
                     android:onClick="addPointForTeamB"
                     android:text="Point" />
 
@@ -194,8 +242,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="32dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="88dp"
         android:onClick="reset"
         android:text="Reset" />
 
